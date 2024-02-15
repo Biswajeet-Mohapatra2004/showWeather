@@ -22,8 +22,8 @@ function App() {
   const [latitude, setLatitude] = useState("");
   const [longitude, setLongitude] = useState("");
   const [day, setDay] = useState("");
-  const key = import.meta.env.VITE_API_KEY;
-  const baseUrl = import.meta.env.VITE_BASE_URL;
+  const key = process.env.VITE_API_KEY;
+  const baseUrl = process.env.VITE_BASE_URL;
 
   useEffect(() => {
     const generateData = async () => {
